@@ -155,18 +155,23 @@ import Layout from '../layouts/Layout.astro';
   }
 </style>
 
-<script>
-  // Theme toggle functionality
-  const lightButton = document.getElementById('light-theme-button');
-  const darkButton = document.getElementById('dark-theme-button');
-  
-  lightButton?.addEventListener('click', () => {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-  });
-  
-  darkButton?.addEventListener('click', () => {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    const lightButton = document.getElementById('light-theme-button');
+    const darkButton = document.getElementById('dark-theme-button');
+    
+    if (lightButton) {
+      lightButton.addEventListener('click', function() {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      });
+    }
+    
+    if (darkButton) {
+      darkButton.addEventListener('click', function() {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      });
+    }
   });
 </script>
