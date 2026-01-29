@@ -5,46 +5,6 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="2667">
   <div class="min-h-screen flex flex-col items-center justify-center px-4 -mt-12">
     
-    <!-- Theme Toggle -->
-    <div class="fixed top-6 right-6 flex items-center gap-1 z-50">
-      <button 
-        id="light-theme-button"
-        aria-label="Light theme"
-        class="group p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-neutral-400 dark:stroke-neutral-500 opacity-60 group-hover:opacity-100 group-hover:stroke-neutral-800 dark:group-hover:stroke-[#2EE59D] transition-all duration-300" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="24" cy="24" r="8"></circle>
-          <circle cx="24" cy="24" r="4" stroke-width="1"></circle>
-          <line x1="24" y1="4" x2="24" y2="12"></line>
-          <line x1="24" y1="36" x2="24" y2="44"></line>
-          <line x1="4" y1="24" x2="12" y2="24"></line>
-          <line x1="36" y1="24" x2="44" y2="24"></line>
-          <line x1="9.86" y1="9.86" x2="15.51" y2="15.51"></line>
-          <line x1="32.49" y1="32.49" x2="38.14" y2="38.14"></line>
-          <line x1="9.86" y1="38.14" x2="15.51" y2="32.49"></line>
-          <line x1="32.49" y1="15.51" x2="38.14" y2="9.86"></line>
-          <circle cx="24" cy="4" r="1.5" stroke-width="1"></circle>
-          <circle cx="24" cy="44" r="1.5" stroke-width="1"></circle>
-          <circle cx="4" cy="24" r="1.5" stroke-width="1"></circle>
-          <circle cx="44" cy="24" r="1.5" stroke-width="1"></circle>
-        </svg>
-      </button>
-      <button 
-        id="dark-theme-button"
-        aria-label="Dark theme"
-        class="group p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-neutral-400 dark:stroke-neutral-500 opacity-60 group-hover:opacity-100 group-hover:stroke-neutral-800 dark:group-hover:stroke-[#2EE59D] transition-all duration-300" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M36 24c0 8.84-7.16 16-16 16-2.63 0-5.11-.64-7.3-1.77A16 16 0 0 0 36 24c0-5.05-2.34-9.56-6-12.5A15.9 15.9 0 0 1 36 24z"></path>
-          <circle cx="38" cy="12" r="1.5" stroke-width="1"></circle>
-          <circle cx="42" cy="20" r="1" stroke-width="1"></circle>
-          <circle cx="34" cy="8" r="1" stroke-width="1"></circle>
-          <circle cx="22" cy="18" r="2" stroke-width="1"></circle>
-          <circle cx="18" cy="28" r="1.5" stroke-width="1"></circle>
-        </svg>
-      </button>
-    </div>
-
     <!-- Terminal Intro -->
     <div class="font-mono text-sm md:text-base text-neutral-600 dark:text-neutral-400 text-center space-y-2 terminal-intro mb-8">
       <div class="terminal-line" style="--delay: 0">
