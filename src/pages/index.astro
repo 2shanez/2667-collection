@@ -3,17 +3,6 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="2667">
-  <script is:inline>
-    function setLightMode() {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-    
-    function setDarkMode() {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  </script>
   <div class="min-h-screen flex flex-col items-center justify-center px-4 -mt-12">
     
     <!-- Theme Toggle -->
