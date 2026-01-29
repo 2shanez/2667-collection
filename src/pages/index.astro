@@ -3,38 +3,38 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="2667">
-  <div class="min-h-screen bg-[#e8e6e3] flex flex-col items-center justify-center px-4 -mt-12">
+  <div class="min-h-screen bg-black flex flex-col items-center justify-center px-4 -mt-12">
     
     <!-- Ape Container with Color Reveal Animation -->
     <div class="relative w-64 h-64 md:w-80 md:h-80 mb-12">
       <!-- Outline version (base layer) -->
       <img 
-        src="/ape-outline.jpg" 
+        src="/ape-outline.png" 
         alt="2667" 
-        class="absolute inset-0 w-full h-full object-contain"
+        class="absolute inset-0 w-full h-full object-contain dark:[filter:invert(1)_sepia(1)_saturate(50)_hue-rotate(80deg)_brightness(0.7)]"
       />
       <!-- Color version (reveals on top) -->
       <img 
-        src="/ape-color.jpg" 
+        src="/ape-color.jpeg" 
         alt="2667" 
-        class="absolute inset-0 w-full h-full object-contain color-reveal"
+        class="absolute inset-0 w-full h-full object-contain color-reveal rounded-xl"
       />
     </div>
 
     <!-- Terminal Intro -->
-    <div class="font-mono text-sm md:text-base text-neutral-800 text-center space-y-2 terminal-intro">
-      <div class="terminal-line" style="--delay: 2">
-        <span class="text-neutral-500">&gt;</span>
+    <div class="font-mono text-sm md:text-base text-neutral-400 text-center space-y-2 terminal-intro">
+      <div class="terminal-line" style="--delay: 4">
+        <span class="text-[#2EE59D]">&gt;</span>
         <span class="typing-text"> initializing 2667_</span>
         <span class="cursor">▋</span>
       </div>
-      <div class="terminal-line" style="--delay: 3">
-        <span class="text-neutral-500">&gt;</span>
+      <div class="terminal-line" style="--delay: 5.5">
+        <span class="text-[#2EE59D]">&gt;</span>
         <span class="typing-text"> status: </span>
-        <span class="status-ready text-emerald-600">active</span>
+        <span class="status-ready text-[#2EE59D]">active</span>
       </div>
-      <div class="terminal-line" style="--delay: 4.5">
-        <span class="text-neutral-500">&gt;</span>
+      <div class="terminal-line" style="--delay: 7">
+        <span class="text-[#2EE59D]">&gt;</span>
         <span class="typing-text"> investing in the future of digital culture</span>
       </div>
     </div>
@@ -43,7 +43,7 @@ import Layout from '../layouts/Layout.astro';
     <nav class="mt-16 flex gap-8 nav-fade">
       <a 
         href="/collection" 
-        class="px-6 py-3 border border-neutral-400 text-neutral-700 font-mono text-sm uppercase tracking-wider hover:bg-neutral-800 hover:text-white hover:border-neutral-800 transition-all duration-300"
+        class="px-6 py-3 border border-neutral-600 text-neutral-300 font-mono text-sm uppercase tracking-wider hover:bg-[#2EE59D] hover:text-black hover:border-[#2EE59D] transition-all duration-300"
       >
         Collection
       </a>
@@ -56,7 +56,7 @@ import Layout from '../layouts/Layout.astro';
   /* Color reveal animation - clip from bottom to top */
   .color-reveal {
     clip-path: inset(100% 0 0 0);
-    animation: revealColor 1.5s ease-out forwards;
+    animation: revealColor 3.5s ease-out forwards;
     animation-delay: 0.5s;
   }
 
@@ -88,20 +88,20 @@ import Layout from '../layouts/Layout.astro';
   .terminal-intro .status-ready {
     opacity: 0;
     animation: blinkIn 0.3s ease forwards;
-    animation-delay: 4s;
+    animation-delay: 6.5s;
   }
 
   .terminal-intro .cursor {
     animation: cursorBlink 0.7s step-end infinite;
     animation-delay: calc(var(--delay) * 1s);
     margin-left: 2px;
-    color: #10b981;
+    color: #2EE59D;
   }
 
   .nav-fade {
     opacity: 0;
     animation: fadeIn 0.6s ease forwards;
-    animation-delay: 5.5s;
+    animation-delay: 8.5s;
   }
 
   @keyframes lineAppear {
