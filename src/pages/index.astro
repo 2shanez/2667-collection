@@ -30,12 +30,12 @@ import Layout from '../layouts/Layout.astro';
     </button>
 
     <!-- Ape Container with Color Reveal Animation -->
-    <div class="relative w-64 h-64 md:w-80 md:h-80 mb-12 rounded-xl overflow-hidden">
-      <!-- Outline version (base layer) - scaled to match colored version framing -->
+    <div class="relative w-64 h-64 md:w-80 md:h-80 mb-12 rounded-xl overflow-hidden bg-white">
+      <!-- Outline version (base layer) - cropped to match colored -->
       <img 
-        src="/ape-outline.png" 
+        src="/ape-outline.jpg" 
         alt="2667" 
-        class="absolute inset-0 w-[180%] h-[180%] object-contain -translate-x-[22%] -translate-y-[5%] opacity-80 dark:[filter:invert(1)_sepia(1)_saturate(50)_hue-rotate(80deg)_brightness(0.7)]"
+        class="absolute w-[175%] h-auto top-[5%] left-1/2 -translate-x-1/2"
       />
       <!-- Color version (reveals on top) -->
       <img 
