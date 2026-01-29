@@ -8,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Theme Toggle -->
     <div class="fixed top-6 right-6 flex items-center gap-1 z-50">
       <button 
-        id="light-theme-button"
+        onclick="setLightMode()"
         aria-label="Light theme"
         class="group p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
       >
@@ -34,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
         </svg>
       </button>
       <button 
-        id="dark-theme-button"
+        onclick="setDarkMode()"
         aria-label="Dark theme"
         class="group p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
       >
@@ -156,22 +156,13 @@ import Layout from '../layouts/Layout.astro';
 </style>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', function() {
-    const lightButton = document.getElementById('light-theme-button');
-    const darkButton = document.getElementById('dark-theme-button');
-    
-    if (lightButton) {
-      lightButton.addEventListener('click', function() {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      });
-    }
-    
-    if (darkButton) {
-      darkButton.addEventListener('click', function() {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      });
-    }
-  });
+  function setLightMode() {
+    document.documentElement.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+  }
+  
+  function setDarkMode() {
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  }
 </script>
