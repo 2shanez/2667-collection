@@ -1,0 +1,47 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "The 2667 Collection - NFTs by Shane Sarin" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/2667.jpeg" />
+    <title>{title} | 2667</title>
+  </head>
+  <body class="antialiased">
+    <main class="max-w-4xl mx-auto px-4 py-12">
+      <slot />
+    </main>
+    <script is:inline async src="https://platform.twitter.com/widgets.js"></script>
+    <script is:inline>
+      // Lazy load videos
+      document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('video[autoplay]');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+        }, { rootMargin: '50px', threshold: 0.1 });
+        videos.forEach(video => {
+          video.pause();
+          observer.observe(video);
+        });
+      });
+    </script>
+  </body>
+</html>
