@@ -3,10 +3,10 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="2667">
-  <div class="min-h-screen flex flex-col items-center justify-center px-4 -mt-12">
+  <div class="min-h-screen flex flex-col items-center justify-between px-4 py-16">
     
     <!-- Terminal Intro -->
-    <div class="font-mono text-sm md:text-base text-neutral-500 space-y-2 terminal-intro mb-8 flex flex-col items-center">
+    <div class="font-mono text-sm md:text-base text-neutral-500 space-y-2 terminal-intro flex flex-col items-center">
       <div class="terminal-line flex items-center justify-center" style="--delay: 0">
         <span class="text-[#2EE59D]">&gt;</span>
         <span class="typing-text"> initializing 2667_</span>
@@ -20,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- Ape Icon + 2667 - fades in after terminal -->
-    <div class="flex flex-col items-center justify-center ape-fade mb-12">
+    <div class="flex flex-col items-center justify-center ape-fade">
       <img 
         src="/ape-icon.png" 
         alt="2667" 
@@ -30,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <!-- Navigation -->
-    <nav class="mt-10 flex justify-center nav-fade w-full">
+    <nav class="flex justify-center nav-fade w-full">
       <a 
         href="/collection" 
         class="px-6 py-2 border border-[#2EE59D]/30 text-[#2EE59D]/70 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#2EE59D] hover:text-black hover:border-[#2EE59D] transition-all duration-300 text-center"
