@@ -5,26 +5,22 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Collection">
   <div class="space-y-8">
     
-    <!-- Terminal header -->
-    <section class="terminal-intro font-mono text-sm text-neutral-500 dark:text-neutral-500">
-      <div class="terminal-line" style="--delay: 0">
-        <span class="ape-green">&gt;</span>
-        <span class="typing-text"> loading collection...</span>
-        <span class="cursor">▋</span>
+    <!-- Terminal header with toggle -->
+    <section class="flex justify-between items-start">
+      <div class="terminal-intro font-mono text-sm text-neutral-500 dark:text-neutral-500">
+        <div class="terminal-line" style="--delay: 0">
+          <span class="ape-green">&gt;</span>
+          <span class="typing-text"> loading collection...</span>
+          <span class="cursor">▋</span>
+        </div>
+        <div class="terminal-line" style="--delay: 1">
+          <span class="ape-green">&gt;</span>
+          <span class="typing-text"> vault: </span>
+          <span class="status-ready ape-green">2667</span>
+          <span class="cursor final">▋</span>
+        </div>
       </div>
-      <div class="terminal-line" style="--delay: 1">
-        <span class="ape-green">&gt;</span>
-        <span class="typing-text"> vault: </span>
-        <span class="status-ready ape-green">2667</span>
-        <span class="cursor final">▋</span>
-      </div>
-    </section>
-
-    <!-- All content wrapper -->
-    <div class="page-content space-y-8">
-
-    <!-- Theme Toggle -->
-    <div class="flex justify-end mb-4">
+      <!-- Theme Toggle -->
       <button 
         id="theme-toggle" 
         class="p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
@@ -59,7 +55,10 @@ import Layout from '../layouts/Layout.astro';
           <circle cx="36" cy="20" r="1"></circle>
         </svg>
       </button>
-    </div>
+    </section>
+
+    <!-- All content wrapper -->
+    <div class="page-content space-y-8">
 
     <!-- Hero Header -->
     <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 p-8">
