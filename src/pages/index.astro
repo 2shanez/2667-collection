@@ -16,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="terminal-line flex items-center justify-center" style="--delay: 1.5">
         <span class="text-[#2EE59D]">&gt;</span>
         <span class="typing-text"> status: </span>
-        <span class="status-ready text-amber-500" id="status-word">pending</span>
+        <span class="status-ready text-amber-500">pending</span>
       </div>
     </div>
 
@@ -72,7 +72,6 @@ import Layout from '../layouts/Layout.astro';
     opacity: 0;
     animation: blinkIn 0.3s ease forwards;
     animation-delay: 2.5s;
-    transition: opacity 0.2s ease;
   }
 
   .terminal-intro .cursor {
@@ -115,23 +114,3 @@ import Layout from '../layouts/Layout.astro';
     to { opacity: 1; }
   }
 </style>
-
-<script>
-  // Rotate status words
-  const words = ['pending', 'listening', 'watching', 'waiting'];
-  let index = 0;
-  
-  setTimeout(() => {
-    setInterval(() => {
-      index = (index + 1) % words.length;
-      const el = document.getElementById('status-word');
-      if (el) {
-        el.style.opacity = '0';
-        setTimeout(() => {
-          el.textContent = words[index];
-          el.style.opacity = '1';
-        }, 200);
-      }
-    }, 3000);
-  }, 5000); // Start rotating after 5 seconds
-</script>
