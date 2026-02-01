@@ -124,3 +124,11 @@ import Layout from '../layouts/Layout.astro';
     to { opacity: 1; }
   }
 </style>
+
+<script>
+  // Theme toggle
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>

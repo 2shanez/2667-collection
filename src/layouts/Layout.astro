@@ -34,12 +34,6 @@ const { title, description = "2667 - Investing in the future of digital culture"
     
     <script is:inline async src="https://platform.twitter.com/widgets.js"></script>
     <script is:inline>
-      // Theme toggle
-      document.getElementById('theme-toggle')?.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      });
-
       // Lazy load videos
       document.addEventListener('DOMContentLoaded', () => {
         const videos = document.querySelectorAll('video[autoplay]');
