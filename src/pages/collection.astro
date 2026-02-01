@@ -23,13 +23,11 @@ import Layout from '../layouts/Layout.astro';
     <!-- All content wrapper -->
     <div class="page-content space-y-8">
 
-    <!-- Hero Header -->
-    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 p-8">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-cyan-500/10 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
-      <!-- Theme Toggle -->
+    <!-- Theme Toggle -->
+    <div class="flex justify-end mb-4">
       <button 
         id="theme-toggle" 
-        class="absolute top-2 right-2 z-10 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
+        class="p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
         aria-label="Toggle theme"
       >
         <!-- Sun icon (shown in light mode) -->
@@ -61,6 +59,11 @@ import Layout from '../layouts/Layout.astro';
           <circle cx="36" cy="20" r="1"></circle>
         </svg>
       </button>
+    </div>
+
+    <!-- Hero Header -->
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 p-8">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-cyan-500/10 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
       <div class="relative flex flex-col sm:flex-row items-center sm:items-start gap-6">
         <div class="relative">
           <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl blur-lg opacity-50"></div>
