@@ -4,7 +4,17 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="2667">
   <div class="min-h-screen flex items-center justify-center px-4 py-8">
-    <div class="flex flex-col items-center justify-between border border-[#2EE59D]/30 rounded-lg px-12 py-12 min-h-[85vh] w-full max-w-xl">
+    <div class="relative flex flex-col items-center justify-between border border-[#2EE59D]/30 rounded-lg px-12 py-12 min-h-[85vh] w-full max-w-xl">
+    
+    <!-- Theme Toggle -->
+    <button 
+      id="theme-toggle" 
+      class="absolute top-4 right-4 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300 font-mono text-xs"
+      aria-label="Toggle theme"
+    >
+      <span class="dark:hidden">☀️</span>
+      <span class="hidden dark:inline">🌙</span>
+    </button>
     
     <!-- Terminal Intro -->
     <div class="font-mono text-sm md:text-base text-neutral-600 dark:text-neutral-400 space-y-2 terminal-intro flex flex-col items-center">

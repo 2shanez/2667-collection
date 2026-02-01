@@ -28,16 +28,6 @@ const { title, description = "2667 - Investing in the future of digital culture"
     <title>{title}</title>
   </head>
   <body class="bg-white dark:bg-black text-black dark:text-white antialiased transition-colors duration-300">
-    <!-- Theme Toggle -->
-    <button 
-      id="theme-toggle" 
-      class="fixed top-4 right-4 z-50 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300 font-mono text-xs"
-      aria-label="Toggle theme"
-    >
-      <span class="dark:hidden">☀️</span>
-      <span class="hidden dark:inline">🌙</span>
-    </button>
-
     <main class="max-w-4xl mx-auto px-4 py-12">
       <slot />
     </main>
