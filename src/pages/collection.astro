@@ -3,42 +3,6 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Collection">
-  <!-- Theme Toggle -->
-  <button 
-    id="theme-toggle" 
-    class="fixed top-4 right-4 z-50 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300 bg-white/80 dark:bg-black/80 backdrop-blur-sm"
-    aria-label="Toggle theme"
-  >
-    <!-- Sun icon (shown in light mode) -->
-    <svg class="w-6 h-6 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="24" cy="24" r="8"></circle>
-      <circle cx="24" cy="24" r="4"></circle>
-      <line x1="24" y1="4" x2="24" y2="14"></line>
-      <circle cx="24" cy="4" r="1.5"></circle>
-      <line x1="24" y1="34" x2="24" y2="44"></line>
-      <circle cx="24" cy="44" r="1.5"></circle>
-      <line x1="4" y1="24" x2="14" y2="24"></line>
-      <circle cx="4" cy="24" r="1.5"></circle>
-      <line x1="34" y1="24" x2="44" y2="24"></line>
-      <circle cx="44" cy="24" r="1.5"></circle>
-      <line x1="9.86" y1="9.86" x2="16.93" y2="16.93"></line>
-      <circle cx="9.86" cy="9.86" r="1.5"></circle>
-      <line x1="31.07" y1="31.07" x2="38.14" y2="38.14"></line>
-      <circle cx="38.14" cy="38.14" r="1.5"></circle>
-      <line x1="9.86" y1="38.14" x2="16.93" y2="31.07"></line>
-      <circle cx="9.86" cy="38.14" r="1.5"></circle>
-      <line x1="31.07" y1="16.93" x2="38.14" y2="9.86"></line>
-      <circle cx="38.14" cy="9.86" r="1.5"></circle>
-    </svg>
-    <!-- Moon icon (shown in dark mode) -->
-    <svg class="w-6 h-6 hidden dark:block stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M32 8a16 16 0 1 0 0 32 12 12 0 0 1 0-32z"></path>
-      <circle cx="38" cy="10" r="2"></circle>
-      <circle cx="42" cy="18" r="1.5"></circle>
-      <circle cx="36" cy="20" r="1"></circle>
-    </svg>
-  </button>
-
   <div class="space-y-8">
     
     <!-- Terminal header -->
@@ -62,6 +26,41 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero Header -->
     <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 p-8">
       <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-cyan-500/10 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
+      <!-- Theme Toggle -->
+      <button 
+        id="theme-toggle" 
+        class="absolute top-4 right-4 z-10 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
+        aria-label="Toggle theme"
+      >
+        <!-- Sun icon (shown in light mode) -->
+        <svg class="w-5 h-5 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="24" cy="24" r="8"></circle>
+          <circle cx="24" cy="24" r="4"></circle>
+          <line x1="24" y1="4" x2="24" y2="14"></line>
+          <circle cx="24" cy="4" r="1.5"></circle>
+          <line x1="24" y1="34" x2="24" y2="44"></line>
+          <circle cx="24" cy="44" r="1.5"></circle>
+          <line x1="4" y1="24" x2="14" y2="24"></line>
+          <circle cx="4" cy="24" r="1.5"></circle>
+          <line x1="34" y1="24" x2="44" y2="24"></line>
+          <circle cx="44" cy="24" r="1.5"></circle>
+          <line x1="9.86" y1="9.86" x2="16.93" y2="16.93"></line>
+          <circle cx="9.86" cy="9.86" r="1.5"></circle>
+          <line x1="31.07" y1="31.07" x2="38.14" y2="38.14"></line>
+          <circle cx="38.14" cy="38.14" r="1.5"></circle>
+          <line x1="9.86" y1="38.14" x2="16.93" y2="31.07"></line>
+          <circle cx="9.86" cy="38.14" r="1.5"></circle>
+          <line x1="31.07" y1="16.93" x2="38.14" y2="9.86"></line>
+          <circle cx="38.14" cy="9.86" r="1.5"></circle>
+        </svg>
+        <!-- Moon icon (shown in dark mode) -->
+        <svg class="w-5 h-5 hidden dark:block stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 8a16 16 0 1 0 0 32 12 12 0 0 1 0-32z"></path>
+          <circle cx="38" cy="10" r="2"></circle>
+          <circle cx="42" cy="18" r="1.5"></circle>
+          <circle cx="36" cy="20" r="1"></circle>
+        </svg>
+      </button>
       <div class="relative flex flex-col sm:flex-row items-center sm:items-start gap-6">
         <div class="relative">
           <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl blur-lg opacity-50"></div>
