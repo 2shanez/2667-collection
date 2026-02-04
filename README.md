@@ -1,43 +1,64 @@
-# Astro Starter Kit: Minimal
+# 2667 Collection
 
-```sh
-npm create astro@latest -- --template minimal
+Digital art and NFT collection showcase.
+
+🔗 **Live:** [collection.2667.io](https://collection.2667.io) or [2667-collection.vercel.app](https://2667-collection.vercel.app)
+
+---
+
+## Collection
+
+Curated digital artworks and NFT pieces:
+
+| Piece | Type |
+|-------|------|
+| ACube | Video |
+| Bullrun | Video |
+| Carbon | Video |
+| CheapCarbon | Video |
+| Complexity | Video |
+| FiveCubes | Video |
+| IridescentImagination | Video |
+| MonstrousVermin | Video |
+| SunlightOveraCity | Video |
+| Ten_Cubes | Video |
+| ThatRoom | Video |
+| TheFlipper | Video |
+| TheGoldVanguard | Video |
+| Twenty_Cubes | Video |
+| Bored Ape | Image |
+| Everyday Artifact | Image |
+
+---
+
+## Tech Stack
+
+- **Framework:** [Astro](https://astro.build)
+- **Styling:** Custom CSS
+- **Hosting:** Vercel
+
+---
+
+## Local Development
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+public/
+└── collection/     # Art assets (mp4, png, jpg)
+src/
+├── layouts/        # Page layout
+├── pages/          # Routes
+└── styles/         # Global CSS
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Part of [2667.io](https://2667.io)
