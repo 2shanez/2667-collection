@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-
 <Layout title="Collection">
   <div class="space-y-8">
 
@@ -20,13 +19,8 @@ import Layout from '../layouts/Layout.astro';
           <span class="cursor final">▋</span>
         </div>
       </div>
-
       <!-- Theme Toggle -->
-      <button
-        id="theme-toggle"
-        class="p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
-        aria-label="Toggle theme"
-      >
+      <button id="theme-toggle" class="p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300" aria-label="Toggle theme" >
         <!-- Sun icon (shown in light mode) -->
         <svg class="w-5 h-5 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="24" cy="24" r="8"></circle>
@@ -103,8 +97,8 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/ACube.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/ACube.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -115,8 +109,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/FiveCubes.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/FiveCubes.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -127,8 +121,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/Ten_Cubes.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/Ten_Cubes.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -139,8 +133,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/Twenty_Cubes.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/Twenty_Cubes.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -151,8 +145,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/Complexity.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/Complexity.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -185,8 +179,8 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/TheFlipper.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/TheFlipper.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -214,8 +208,8 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/Carbon.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/Carbon.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -226,8 +220,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/TheGoldVanguard.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/TheGoldVanguard.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -238,8 +232,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/CheapCarbon.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/CheapCarbon.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -262,8 +256,8 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/ThatRoom.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/ThatRoom.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -274,8 +268,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/MonstrousVermin.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/MonstrousVermin.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -286,8 +280,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/SunlightOveraCity.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/SunlightOveraCity.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -298,8 +292,8 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="group">
             <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source src="/collection/IridescentImagination.mp4" type="video/mp4" />
+              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <source data-src="/collection/IridescentImagination.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="mt-4">
@@ -321,8 +315,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="group max-w-md">
           <div class="overflow-hidden rounded-xl bg-black shadow-md">
-            <video autoplay loop muted playsinline preload="auto" class="w-full h-auto group-hover:scale-105 transition-transform duration-500">
-              <source src="/collection/Bullrun.mp4" type="video/mp4" />
+            <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-auto group-hover:scale-105 transition-transform duration-500">
+              <source data-src="/collection/Bullrun.mp4" type="video/mp4" />
             </video>
           </div>
           <div class="mt-4">
@@ -391,10 +385,49 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <script is:inline>
+  // Theme toggle
   document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('theme-toggle')?.addEventListener('click', () => {
       const isDark = document.documentElement.classList.toggle('dark');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
   });
+
+  // Lazy-load videos: only start loading when they enter the viewport
+  (function () {
+    var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy-video'));
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var video = entry.target;
+            var sources = video.querySelectorAll('source[data-src]');
+            sources.forEach(function (source) {
+              source.src = source.dataset.src;
+              source.removeAttribute('data-src');
+            });
+            video.load();
+            video.play().catch(function () {});
+            observer.unobserve(video);
+          }
+        });
+      }, { rootMargin: '200px' });
+
+      lazyVideos.forEach(function (video) {
+        observer.observe(video);
+      });
+    } else {
+      // Fallback: load all videos immediately
+      lazyVideos.forEach(function (video) {
+        var sources = video.querySelectorAll('source[data-src]');
+        sources.forEach(function (source) {
+          source.src = source.dataset.src;
+          source.removeAttribute('data-src');
+        });
+        video.load();
+        video.play().catch(function () {});
+      });
+    }
+  })();
 </script>
