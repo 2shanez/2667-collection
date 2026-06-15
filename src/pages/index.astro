@@ -3,165 +3,166 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="2667">
-  <div class="min-h-screen flex items-center justify-center px-4 py-8">
-    <div class="relative flex flex-col items-center justify-between border border-[#2EE59D]/30 rounded-lg px-12 py-12 min-h-[85vh] w-full max-w-xl">
-    
-    <!-- Theme Toggle -->
-    <button 
-      id="theme-toggle" 
-      class="absolute top-4 right-4 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
-      aria-label="Toggle theme"
-    >
-      <!-- Sun icon (shown in light mode) -->
-      <svg class="w-6 h-6 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="24" cy="24" r="8"></circle>
-        <circle cx="24" cy="24" r="4"></circle>
-        <line x1="24" y1="4" x2="24" y2="14"></line>
-        <circle cx="24" cy="4" r="1.5"></circle>
-        <line x1="24" y1="34" x2="24" y2="44"></line>
-        <circle cx="24" cy="44" r="1.5"></circle>
-        <line x1="4" y1="24" x2="14" y2="24"></line>
-        <circle cx="4" cy="24" r="1.5"></circle>
-        <line x1="34" y1="24" x2="44" y2="24"></line>
-        <circle cx="44" cy="24" r="1.5"></circle>
-                <line x1="13.75" y1="13.75" x2="17.28" y2="17.28"></line>
-                <line x1="30.72" y1="30.72" x2="34.25" y2="34.25"></line>
-                <line x1="13.75" y1="34.25" x2="17.28" y2="30.72"></line>
-                <line x1="30.72" y1="17.28" x2="34.25" y2="13.75"></line>
-        svg>
-      <!-- Moon icon (shown in dark mode) -->
-      <svg class="w-6 h-6 hidden dark:block stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M32 8a16 16 0 1 0 0 32 12 12 0 0 1 0-32z"></path>
-        <circle cx="38" cy="10" r="2.5"></circle>
-        <circle cx="43" cy="20" r="2"></circle>
-        <circle cx="40" cy="31" r="1.5"></circle>
-        <circle cx="37" cy="16" r="1"></circle>
-      </svg>
-    </button>
-    
-    <!-- Terminal Intro -->
-    <div class="font-mono text-sm md:text-base text-neutral-600 dark:text-neutral-400 space-y-2 terminal-intro flex flex-col items-center">
-      <div class="terminal-line flex items-center justify-center" style="--delay: 0">
-        <span class="text-[#2EE59D]">&gt;</span>
-        <span class="typing-text"> initializing <span class="text-[#2EE59D]">2667</span>_</span>
-        <span class="cursor">▋</span>
-      </div>
-      <div class="terminal-line flex items-center justify-center" style="--delay: 1.5">
-        <span class="text-[#2EE59D]">&gt;</span>
-        <span class="typing-text"> status: </span>
-        <span class="status-ready text-amber-500">pending</span>
-      </div>
-    </div>
+<div class="min-h-screen flex items-center justify-center px-4 py-8">
+<div class="relative flex flex-col items-center justify-between border border-[#2EE59D]/30 rounded-lg px-12 py-12 min-h-[85vh] w-full max-w-xl">
 
-    <!-- Ape Icon + 2667 - fades in after terminal -->
-    <div class="flex flex-col items-center justify-center ape-fade">
-      <img 
-        src="/ape-icon.png" 
-        alt="2667" 
-        class="w-[20rem] h-auto md:w-[32rem] max-w-full object-contain [filter:invert(59%)_sepia(52%)_saturate(652%)_hue-rotate(107deg)_brightness(95%)_contrast(92%)] [image-rendering:high-quality] [-webkit-backface-visibility:hidden] [transform:translateZ(0)]"
-      />
-      <span class="text-[1.75rem] md:text-[2.5rem] font-mono uppercase text-[#2EE59D] mt-6 text-center mx-auto block">2 6 6 7</span>
-    </div>
+<!-- Theme Toggle -->
+<button
+  id="theme-toggle"
+  class="absolute top-4 right-4 p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300"
+  aria-label="Toggle theme"
+>
+  <!-- Sun icon (shown in light mode) -->
+  <svg class="w-6 h-6 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="24" r="8"></circle>
+    <circle cx="24" cy="24" r="4" stroke-width="1"></circle>
+    <line x1="24" y1="4" x2="24" y2="12"></line>
+    <line x1="24" y1="36" x2="24" y2="44"></line>
+    <line x1="4" y1="24" x2="12" y2="24"></line>
+    <line x1="36" y1="24" x2="44" y2="24"></line>
+    <line x1="9.86" y1="9.86" x2="15.51" y2="15.51"></line>
+    <line x1="32.49" y1="32.49" x2="38.14" y2="38.14"></line>
+    <line x1="9.86" y1="38.14" x2="15.51" y2="32.49"></line>
+    <line x1="32.49" y1="15.51" x2="38.14" y2="9.86"></line>
+    <circle cx="24" cy="4" r="1.5" stroke-width="1"></circle>
+    <circle cx="24" cy="44" r="1.5" stroke-width="1"></circle>
+    <circle cx="4" cy="24" r="1.5" stroke-width="1"></circle>
+    <circle cx="44" cy="24" r="1.5" stroke-width="1"></circle>
+  </svg>
+  <!-- Moon icon (shown in dark mode) -->
+  <svg class="w-6 h-6 hidden dark:block stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 24c0 8.84-7.16 16-16 16-2.63 0-5.11-.64-7.3-1.77A16 16 0 0 0 36 24c0-5.05-2.34-9.56-6-12.5A15.9 15.9 0 0 1 36 24z"></path>
+    <circle cx="38" cy="12" r="1.5" stroke-width="1"></circle>
+    <circle cx="42" cy="20" r="1" stroke-width="1"></circle>
+    <circle cx="34" cy="8" r="1" stroke-width="1"></circle>
+    <circle cx="22" cy="18" r="2" stroke-width="1"></circle>
+    <circle cx="18" cy="28" r="1.5" stroke-width="1"></circle>
+  </svg>
+</button>
 
-    <!-- Navigation -->
-    <nav class="flex flex-col items-center gap-3 nav-fade w-full">
-      <a 
-        href="https://vaada.io" 
-        target="_blank"
-        rel="noopener noreferrer"
-        class="min-w-[10rem] px-6 py-2 border border-[#2EE59D]/30 text-[#2EE59D]/70 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#2EE59D] hover:text-black hover:border-[#2EE59D] transition-all duration-300 text-center"
-      >
-        Vaada
-      </a>
-      <a 
-        href="/collection" 
-        class="min-w-[10rem] px-6 py-2 border border-[#2EE59D]/30 text-[#2EE59D]/70 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#2EE59D] hover:text-black hover:border-[#2EE59D] transition-all duration-300 text-center"
-      >
-        Collection
-      </a>
-    </nav>
-
-    </div>
+<!-- Terminal Intro -->
+<div class="font-mono text-sm md:text-base text-neutral-600 dark:text-neutral-400 space-y-2 terminal-intro flex flex-col items-center">
+  <div class="terminal-line flex items-center justify-center" style="--delay: 0">
+    <span class="text-[#2EE59D]">&gt;</span>
+    <span class="typing-text"> initializing <span class="text-[#2EE59D]">2667</span>_</span>
+    <span class="cursor">▋</span>
   </div>
+  <div class="terminal-line flex items-center justify-center" style="--delay: 1.5">
+    <span class="text-[#2EE59D]">&gt;</span>
+    <span class="typing-text"> status: </span>
+    <span class="status-ready text-amber-500">pending</span>
+  </div>
+</div>
+
+<!-- Ape Icon + 2667 - fades in after terminal -->
+<div class="flex flex-col items-center justify-center ape-fade">
+  <img
+    src="/ape-icon.png"
+    alt="2667"
+    class="w-[20rem] h-auto md:w-[32rem] max-w-full object-contain [filter:invert(59%)_sepia(52%)_saturate(652%)_hue-rotate(107deg)_brightness(95%)_contrast(92%)] [image-rendering:high-quality] [-webkit-backface-visibility:hidden] [transform:translateZ(0)]"
+  />
+  <span class="text-[1.75rem] md:text-[2.5rem] font-mono uppercase text-[#2EE59D] mt-6 text-center mx-auto block">2 6 6 7</span>
+</div>
+
+<!-- Navigation -->
+<nav class="flex flex-col items-center gap-3 nav-fade w-full">
+  <a
+    href="https://vaada.io"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="min-w-[10rem] px-6 py-2 border border-[#2EE59D]/30 text-[#2EE59D]/70 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#2EE59D] hover:text-black hover:border-[#2EE59D] transition-all duration-300 text-center"
+  >
+    Vaada
+  </a>
+  <a
+    href="/collection"
+    class="min-w-[10rem] px-6 py-2 border border-[#2EE59D]/30 text-[#2EE59D]/70 font-mono text-xs uppercase tracking-[0.15em] hover:bg-[#2EE59D] hover:text-black hover:border-[#2EE59D] transition-all duration-300 text-center"
+  >
+    Collection
+  </a>
+</nav>
+
+</div>
+</div>
 </Layout>
 
 <style>
-  /* Ape fade in animation */
-  .ape-fade {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 4s;
-  }
+/* Ape fade in animation */
+.ape-fade {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 4s;
+}
 
-  /* Terminal animations */
-  .terminal-intro .terminal-line {
-    opacity: 0;
-    animation: lineAppear 0.1s ease forwards;
-    animation-delay: calc(var(--delay) * 1s);
-  }
+/* Terminal animations */
+.terminal-intro .terminal-line {
+  opacity: 0;
+  animation: lineAppear 0.1s ease forwards;
+  animation-delay: calc(var(--delay) * 1s);
+}
 
-  .terminal-intro .typing-text {
-    display: inline;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 0;
-    animation: typeText 0.8s steps(30) forwards;
-    animation-delay: calc(var(--delay) * 1s + 0.1s);
-  }
+.terminal-intro .typing-text {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 0;
+  animation: typeText 0.8s steps(30) forwards;
+  animation-delay: calc(var(--delay) * 1s + 0.1s);
+}
 
-  .terminal-intro .status-ready {
-    opacity: 0;
-    animation: blinkIn 0.3s ease forwards;
-    animation-delay: 2.5s;
-  }
+.terminal-intro .status-ready {
+  opacity: 0;
+  animation: blinkIn 0.3s ease forwards;
+  animation-delay: 2.5s;
+}
 
-  .terminal-intro .cursor {
-    animation: cursorBlink 0.7s step-end 5, cursorFadeOut 0.5s ease forwards 3.5s;
-    animation-delay: calc(var(--delay) * 1s);
-    margin-left: 2px;
-    color: #2EE59D;
-  }
+.terminal-intro .cursor {
+  animation: cursorBlink 0.7s step-end 5, cursorFadeOut 0.5s ease forwards 3.5s;
+  animation-delay: calc(var(--delay) * 1s);
+  margin-left: 2px;
+  color: #2EE59D;
+}
 
-  @keyframes cursorFadeOut {
-    to { opacity: 0; }
-  }
+@keyframes cursorFadeOut {
+  to { opacity: 0; }
+}
 
-  .nav-fade {
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards;
-    animation-delay: 5s;
-  }
+.nav-fade {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 5s;
+}
 
-  @keyframes lineAppear {
-    to { opacity: 1; }
-  }
+@keyframes lineAppear {
+  to { opacity: 1; }
+}
 
-  @keyframes typeText {
-    to { max-width: 500px; }
-  }
+@keyframes typeText {
+  to { max-width: 500px; }
+}
 
-  @keyframes blinkIn {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+@keyframes blinkIn {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-  @keyframes cursorBlink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
-  @keyframes fadeIn {
-    to { opacity: 1; }
-  }
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
 </style>
 
 <script is:inline>
-  // Theme toggle
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('theme-toggle')?.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
+// Theme toggle
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
+});
 </script>
