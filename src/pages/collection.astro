@@ -2,429 +2,430 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Collection">
-  <div class="space-y-8">
+<div class="space-y-8">
 
-    <!-- Terminal header with toggle -->
-    <section class="flex justify-between items-start">
-      <div class="terminal-intro font-mono text-sm text-neutral-500 dark:text-neutral-500">
-        <div class="terminal-line" style="--delay: 0">
-          <span class="ape-green">&gt;</span>
-          <span class="typing-text"> loading collection...</span>
-          <span class="cursor">▋</span>
-        </div>
-        <div class="terminal-line" style="--delay: 1">
-          <span class="ape-green">&gt;</span>
-          <span class="typing-text"> vault: </span>
-          <span class="status-ready ape-green">2667</span>
-          <span class="cursor final">▋</span>
-        </div>
+  <!-- Terminal header with toggle -->
+  <section class="flex justify-between items-start">
+    <div class="terminal-intro font-mono text-sm text-neutral-500 dark:text-neutral-500">
+      <div class="terminal-line" style="--delay: 0">
+        <span class="ape-green">&gt;</span>
+        <span class="typing-text"> loading collection...</span>
+        <span class="cursor">▋</span>
       </div>
-      <!-- Theme Toggle -->
-      <button id="theme-toggle" class="p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300" aria-label="Toggle theme" >
-        <!-- Sun icon (shown in light mode) -->
-        <svg class="w-5 h-5 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="24" cy="24" r="8"></circle>
-          <circle cx="24" cy="24" r="4"></circle>
-          <line x1="24" y1="4" x2="24" y2="14"></line>
-          <circle cx="24" cy="4" r="1.5"></circle>
-          <line x1="24" y1="34" x2="24" y2="44"></line>
-          <circle cx="24" cy="44" r="1.5"></circle>
-          <line x1="4" y1="24" x2="14" y2="24"></line>
-          <circle cx="4" cy="24" r="1.5"></circle>
-          <line x1="34" y1="24" x2="44" y2="24"></line>
-          <circle cx="44" cy="24" r="1.5"></circle>
-                  <line x1="13.75" y1="13.75" x2="17.28" y2="17.28"></line>
-                  <line x1="30.72" y1="30.72" x2="34.25" y2="34.25"></line>
-                  <line x1="13.75" y1="34.25" x2="17.28" y2="30.72"></line>
-                  <line x1="30.72" y1="17.28" x2="34.25" y2="13.75"></line>
-          svg>
-        <!-- Moon icon (shown in dark mode) -->
-        <svg class="w-5 h-5 hidden dark:block stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M32 8a16 16 0 1 0 0 32 12 12 0 0 1 0-32z"></path>
-          <circle cx="38" cy="10" r="2.5"></circle>
-          <circle cx="43" cy="20" r="2"></circle>
-          <circle cx="40" cy="31" r="1.5"></circle>
-          <circle cx="37" cy="16" r="1"></circle>
-        </svg>
-      </button>
-    </section>
-
-    <!-- All content wrapper -->
-    <div class="page-content space-y-8">
-
-      <!-- Hero Header -->
-      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 p-8">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-cyan-500/10 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
-        <div class="relative flex flex-col sm:flex-row items-center sm:items-start gap-6">
-          <div class="relative">
-            <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl blur-lg opacity-50"></div>
-            <img
-              src="/2667.jpeg"
-              alt="Bored Ape #2667"
-              class="relative w-24 h-24 rounded-2xl object-cover ring-4 ring-white dark:ring-neutral-700 shadow-xl"
-              loading="eager"
-              fetchpriority="high"
-              decoding="sync"
-            />
-          </div>
-          <div class="text-center sm:text-left">
-            <h1 class="text-3xl sm:text-4xl font-bold text-black dark:text-white tracking-tight">
-              The 2667 Collection
-            </h1>
-            <p class="text-lg text-black dark:text-white mt-1 font-bold tracking-tight">Select Works</p>
-            <p class="font-mono text-sm text-neutral-500 dark:text-neutral-400 mt-3">curated by shane.sarin</p>
-          </div>
-        </div>
+      <div class="terminal-line" style="--delay: 1">
+        <span class="ape-green">&gt;</span>
+        <span class="typing-text"> vault: </span>
+        <span class="status-ready ape-green">2667</span>
+        <span class="cursor final">▋</span>
       </div>
+    </div>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="p-2 rounded-lg border border-[#2EE59D]/30 text-[#2EE59D]/70 hover:bg-[#2EE59D] hover:text-black transition-all duration-300" aria-label="Toggle theme" >
+      <!-- Sun icon (shown in light mode) -->
+      <svg class="w-5 h-5 dark:hidden stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="24" cy="24" r="8"></circle>
+        <circle cx="24" cy="24" r="4" stroke-width="1"></circle>
+        <line x1="24" y1="4" x2="24" y2="12"></line>
+        <line x1="24" y1="36" x2="24" y2="44"></line>
+        <line x1="4" y1="24" x2="12" y2="24"></line>
+        <line x1="36" y1="24" x2="44" y2="24"></line>
+        <line x1="9.86" y1="9.86" x2="15.51" y2="15.51"></line>
+        <line x1="32.49" y1="32.49" x2="38.14" y2="38.14"></line>
+        <line x1="9.86" y1="38.14" x2="15.51" y2="32.49"></line>
+        <line x1="32.49" y1="15.51" x2="38.14" y2="9.86"></line>
+        <circle cx="24" cy="4" r="1.5" stroke-width="1"></circle>
+        <circle cx="24" cy="44" r="1.5" stroke-width="1"></circle>
+        <circle cx="4" cy="24" r="1.5" stroke-width="1"></circle>
+        <circle cx="44" cy="24" r="1.5" stroke-width="1"></circle>
+      </svg>
+      <!-- Moon icon (shown in dark mode) -->
+      <svg class="w-5 h-5 hidden dark:block stroke-current" viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M36 24c0 8.84-7.16 16-16 16-2.63 0-5.11-.64-7.3-1.77A16 16 0 0 0 36 24c0-5.05-2.34-9.56-6-12.5A15.9 15.9 0 0 1 36 24z"></path>
+        <circle cx="38" cy="12" r="1.5" stroke-width="1"></circle>
+        <circle cx="42" cy="20" r="1" stroke-width="1"></circle>
+        <circle cx="34" cy="8" r="1" stroke-width="1"></circle>
+        <circle cx="22" cy="18" r="2" stroke-width="1"></circle>
+        <circle cx="18" cy="28" r="1.5" stroke-width="1"></circle>
+      </svg>
+    </button>
+  </section>
 
-      <div class="content-section">
-        <p class="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
-          2667 is more than a number&mdash;it's the edition of the Bored Ape that became one of the defining pieces in my journey as a collector. I started collecting NFTs to connect with groundbreaking digital artists and be part of a cultural shift in how we create, share, and value art. My collection reflects that journey&mdash;featuring work from visionaries like Pak and Beeple alongside a growing list of other creators I believe in. For me, it's never been about flipping or chasing the next big drop; it's about building a collection that tells a story and supports the artists shaping the future of digital creativity.
-        </p>
+  <!-- All content wrapper -->
+  <div class="page-content space-y-8">
+
+  <!-- Hero Header -->
+  <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 p-8">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-cyan-500/10 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
+    <div class="relative flex flex-col sm:flex-row items-center sm:items-start gap-6">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl blur-lg opacity-50"></div>
+        <img
+          src="/2667.jpeg"
+          alt="Bored Ape #2667"
+          class="relative w-24 h-24 rounded-2xl object-cover ring-4 ring-white dark:ring-neutral-700 shadow-xl"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+        />
       </div>
-
-      <!-- The Fungible Collection -->
-      <section class="mb-16">
-        <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
-          <h2 class="text-2xl font-bold text-black dark:text-white">The Fungible Collection</h2>
-          <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak</p>
-          <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">A groundbreaking collection that redefined our understanding of value in digital art. Released via Sotheby's in April 2021, The Fungible challenged collectors to consider what makes something valuable.</p>
-          <a href="https://www.sothebys.com/en/digital-catalogues/the-fungible-collection-by-pak" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/ACube.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">A Cube</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#481/5148</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/FiveCubes.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Five Cubes</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#424/571</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/Ten_Cubes.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Ten Cubes</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#100/247</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/Twenty_Cubes.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Twenty Cubes</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#20/120</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/Complexity.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Complexity</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#59/100</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-8 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
-          <p class="text-sm text-neutral-700 dark:text-neutral-300">
-            <span class="font-semibold">&#x1F3C6; Fun fact:</span> I placed second in Pak's contest to predict the total sales for The Fungible drop. The final total was $16.8M&mdash;I guessed $16.69M. &#x1F60E;
-          </p>
-        </div>
-        <div class="max-w-md mt-6">
-          <blockquote class="twitter-tweet" data-dnt="true">
-            <p lang="en" dir="ltr">The Oracle results for The Fungible.<br><br>1st: dylanh (<a href="https://twitter.com/0xdylanh">@0xdylanh</a>) &mdash; $16,815,999 (off by $10,000)<br>2nd: shanesarin &mdash; $16,690,000<br>3rd: jonty (<a href="https://twitter.com/jonty">@jonty</a>) &mdash; $16,888,888<br><br>DM me with your ETH address to claim your prize. &#x1F389;</p>&mdash; Pak (@muratpak) <a href="https://twitter.com/muratpak/status/1383165981258874885">April 16, 2021</a>
-          </blockquote>
-        </div>
-      </section>
-
-      <!-- The Title Collection -->
-      <section class="mb-16">
-        <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
-          <h2 class="text-2xl font-bold text-black dark:text-white">The Title</h2>
-          <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak</p>
-          <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released in December 2020, The Title is a conceptual NFT collection built around a single repeated image sold at different prices, with only the token's name changing.</p>
-          <a href="https://etrent.medium.com/muratpaks-the-title-brings-digital-art-into-the-neo-avant-garde-8887b8659571" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/TheFlipper.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">The Flipper</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#66/99</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-8 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
-          <p class="text-sm text-neutral-700 dark:text-neutral-300">
-            <span class="font-semibold">&#x1F440; Notice anything?</span> Check out the edition number...
-          </p>
-        </div>
-      </section>
-
-      <!-- Ash Chapter One: Carbon -->
-      <section class="mb-16">
-        <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
-          <h2 class="text-2xl font-bold text-black dark:text-white">Ash Chapter One: Carbon</h2>
-          <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak</p>
-          <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released in January 2022 as the first drop in Pak's ASH project. It uses a burn system where users burn ASH tokens to create, upgrade, or delete the artworks.</p>
-          <a href="https://burn.art/drops/carbon" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/Carbon.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Carbon</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#434/999</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/TheGoldVanguard.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">The Gold Vanguard</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#763/999</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/CheapCarbon.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Cheap Carbon</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#515/999</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Ash Chapter Two: Metamorphosis -->
-      <section class="mb-16">
-        <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
-          <h2 class="text-2xl font-bold text-black dark:text-white">Ash Chapter Two: Metamorphosis</h2>
-          <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak (featuring 30 artists)</p>
-          <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released in March 2022. Each wallet can mint up to 10 tokens revealing art from 30 creators like Pak, Paris Hilton, and Mad Dog Jones.</p>
-          <a href="https://burn.art/drops/metamorphosis" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/ThatRoom.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">That Room</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#97/250</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/MonstrousVermin.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Monstrous Vermin</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#213/250</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/SunlightOveraCity.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Sunlight Over a City, 2022</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">LI&#x0158;ONA</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#240/250</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
-              <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <source data-src="/collection/IridescentImagination.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Iridescent Imagination</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Mad Dog Jones</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#243/250</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- The 2020 Collection: Beeple Everydays -->
-      <section class="mb-16">
-        <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
-          <h2 class="text-2xl font-bold text-black dark:text-white">The 2020 Collection: Beeple Everydays</h2>
-          <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Beeple</p>
-          <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released on NiftyGateway in December 2020, assembling 722 unique NFTs from Beeple's daily "Everydays" series.</p>
-          <a href="https://beeple-collect.com/collection-all/2020-collection/" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
-        </div>
-        <div class="group max-w-md">
-          <div class="overflow-hidden rounded-xl bg-black shadow-md">
-            <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-auto group-hover:scale-105 transition-transform duration-500">
-              <source data-src="/collection/Bullrun.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="mt-4">
-            <h3 class="font-semibold text-black dark:text-white">BULL RUN</h3>
-            <p class="text-sm text-neutral-500 dark:text-neutral-400">Beeple</p>
-            <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#14/271</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- EVERYDAY ARTIFACTS -->
-      <section class="mb-16">
-        <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
-          <h2 class="text-2xl font-bold text-black dark:text-white">EVERYDAY ARTIFACTS</h2>
-          <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Beeple</p>
-          <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">During the grand opening of BEEPLE STUDIOS on March 11, 2023, Beeple unleashed a dramatic cascade of papers from the ceiling, concealing 100 special physical artifacts. I caught edition #14/100 and got Beeple to sign it.</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
-          <div class="group">
-            <div class="aspect-[3/4] overflow-hidden rounded-xl bg-black shadow-md">
-              <img
-                src="/collection/everydayartifact.png"
-                alt="Everyday Artifact NFT"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">EVERYDAY ARTIFACT</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Beeple</p>
-              <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#14/100</p>
-            </div>
-          </div>
-          <div class="group">
-            <div class="aspect-[3/4] overflow-hidden rounded-xl bg-black shadow-md">
-              <img
-                src="/collection/everydayartifact-signed.jpg"
-                alt="Signed Physical Artifact"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="eager"
-                decoding="async"
-              />
-            </div>
-            <div class="mt-4">
-              <h3 class="font-semibold text-black dark:text-white">Signed Physical</h3>
-              <p class="text-sm text-neutral-500 dark:text-neutral-400">Beeple</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-8 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
-          <p class="text-sm text-neutral-700 dark:text-neutral-300 italic">
-            "Extravaluable Green Dot!" &mdash; Beeple
-          </p>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <section class="font-mono text-xs text-neutral-400 dark:text-neutral-600 pt-8 border-t border-neutral-200 dark:border-neutral-800">
-        <p><span class="ape-green">//</span> to be continued...</p>
-        <p class="mt-2"><a href="/" class="hover:text-black dark:hover:text-white">&larr; 2667.io</a></p>
-      </section>
-
-    </div><!-- end page-content -->
+      <div class="text-center sm:text-left">
+        <h1 class="text-3xl sm:text-4xl font-bold text-black dark:text-white tracking-tight">
+          The 2667 Collection
+        </h1>
+        <p class="text-lg text-black dark:text-white mt-1 font-bold tracking-tight">Select Works</p>
+        <p class="font-mono text-sm text-neutral-500 dark:text-neutral-400 mt-3">curated by shane.sarin</p>
+      </div>
+    </div>
   </div>
+
+  <div class="content-section">
+    <p class="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
+      2667 is more than a number&mdash;it's the edition of the Bored Ape that became one of the defining pieces in my journey as a collector. I started collecting NFTs to connect with groundbreaking digital artists and be part of a cultural shift in how we create, share, and value art. My collection reflects that journey&mdash;featuring work from visionaries like Pak and Beeple alongside a growing list of other creators I believe in. For me, it's never been about flipping or chasing the next big drop; it's about building a collection that tells a story and supports the artists shaping the future of digital creativity.
+    </p>
+  </div>
+
+  <!-- The Fungible Collection -->
+  <section class="mb-16">
+    <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-black dark:text-white">The Fungible Collection</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak</p>
+      <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">A groundbreaking collection that redefined our understanding of value in digital art. Released via Sotheby's in April 2021, The Fungible challenged collectors to consider what makes something valuable.</p>
+      <a href="https://www.sothebys.com/en/digital-catalogues/the-fungible-collection-by-pak" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/ACube.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">A Cube</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#481/5148</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/FiveCubes.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Five Cubes</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#424/571</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/Ten_Cubes.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Ten Cubes</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#100/247</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/Twenty_Cubes.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Twenty Cubes</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#20/120</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/Complexity.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Complexity</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#59/100</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
+      <p class="text-sm text-neutral-700 dark:text-neutral-300">
+        <span class="font-semibold">&#x1F3C6; Fun fact:</span> I placed second in Pak's contest to predict the total sales for The Fungible drop. The final total was $16.8M&mdash;I guessed $16.69M. &#x1F60E;
+      </p>
+    </div>
+    <div class="max-w-md mt-6">
+      <blockquote class="twitter-tweet" data-dnt="true">
+        <p lang="en" dir="ltr">The Oracle results for The Fungible.<br><br>1st: dylanh (<a href="https://twitter.com/0xdylanh">@0xdylanh</a>) &mdash; $16,815,999 (off by $10,000)<br>2nd: shanesarin &mdash; $16,690,000<br>3rd: jonty (<a href="https://twitter.com/jonty">@jonty</a>) &mdash; $16,888,888<br><br>DM me with your ETH address to claim your prize. &#x1F389;</p>&mdash; Pak (@muratpak) <a href="https://twitter.com/muratpak/status/1383165981258874885">April 16, 2021</a>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- The Title Collection -->
+  <section class="mb-16">
+    <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-black dark:text-white">The Title</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak</p>
+      <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released in December 2020, The Title is a conceptual NFT collection built around a single repeated image sold at different prices, with only the token's name changing.</p>
+      <a href="https://etrent.medium.com/muratpaks-the-title-brings-digital-art-into-the-neo-avant-garde-8887b8659571" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/TheFlipper.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">The Flipper</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#66/99</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
+      <p class="text-sm text-neutral-700 dark:text-neutral-300">
+        <span class="font-semibold">&#x1F440; Notice anything?</span> Check out the edition number...
+      </p>
+    </div>
+  </section>
+
+  <!-- Ash Chapter One: Carbon -->
+  <section class="mb-16">
+    <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-black dark:text-white">Ash Chapter One: Carbon</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak</p>
+      <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released in January 2022 as the first drop in Pak's ASH project. It uses a burn system where users burn ASH tokens to create, upgrade, or delete the artworks.</p>
+      <a href="https://burn.art/drops/carbon" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/Carbon.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Carbon</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#434/999</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/TheGoldVanguard.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">The Gold Vanguard</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#763/999</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/CheapCarbon.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Cheap Carbon</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#515/999</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ash Chapter Two: Metamorphosis -->
+  <section class="mb-16">
+    <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-black dark:text-white">Ash Chapter Two: Metamorphosis</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Pak (featuring 30 artists)</p>
+      <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released in March 2022. Each wallet can mint up to 10 tokens revealing art from 30 creators like Pak, Paris Hilton, and Mad Dog Jones.</p>
+      <a href="https://burn.art/drops/metamorphosis" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/ThatRoom.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">That Room</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#97/250</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/MonstrousVermin.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Monstrous Vermin</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Pak</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#213/250</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/SunlightOveraCity.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Sunlight Over a City, 2022</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">LI&#x0158;ONA</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#240/250</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-square overflow-hidden rounded-xl bg-black shadow-md">
+          <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <source data-src="/collection/IridescentImagination.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Iridescent Imagination</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Mad Dog Jones</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#243/250</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 2020 Collection: Beeple Everydays -->
+  <section class="mb-16">
+    <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-black dark:text-white">The 2020 Collection: Beeple Everydays</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Beeple</p>
+      <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">Released on NiftyGateway in December 2020, assembling 722 unique NFTs from Beeple's daily "Everydays" series.</p>
+      <a href="https://beeple-collect.com/collection-all/2020-collection/" target="_blank" rel="noopener" class="inline-block mt-4 text-[#2EE59D] font-medium px-2 py-1 -mx-2 rounded hover:bg-[#2EE59D]/10 transition-colors">Learn more &rarr;</a>
+    </div>
+    <div class="group max-w-md">
+      <div class="overflow-hidden rounded-xl bg-black shadow-md">
+        <video autoplay loop muted playsinline preload="none" class="lazy-video w-full h-auto group-hover:scale-105 transition-transform duration-500">
+          <source data-src="/collection/Bullrun.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="mt-4">
+        <h3 class="font-semibold text-black dark:text-white">BULL RUN</h3>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">Beeple</p>
+        <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#14/271</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVERYDAY ARTIFACTS -->
+  <section class="mb-16">
+    <div class="rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 mb-8 shadow-sm">
+      <h2 class="text-2xl font-bold text-black dark:text-white">EVERYDAY ARTIFACTS</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 font-medium mt-1">by Beeple</p>
+      <p class="text-neutral-600 dark:text-neutral-300 mt-3 leading-relaxed">During the grand opening of BEEPLE STUDIOS on March 11, 2023, Beeple unleashed a dramatic cascade of papers from the ceiling, concealing 100 special physical artifacts. I caught edition #14/100 and got Beeple to sign it.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+      <div class="group">
+        <div class="aspect-[3/4] overflow-hidden rounded-xl bg-black shadow-md">
+          <img
+            src="/collection/everydayartifact.png"
+            alt="Everyday Artifact NFT"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">EVERYDAY ARTIFACT</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Beeple</p>
+          <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">#14/100</p>
+        </div>
+      </div>
+      <div class="group">
+        <div class="aspect-[3/4] overflow-hidden rounded-xl bg-black shadow-md">
+          <img
+            src="/collection/everydayartifact-signed.jpg"
+            alt="Signed Physical Artifact"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold text-black dark:text-white">Signed Physical</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Beeple</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 p-5 rounded-xl bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
+      <p class="text-sm text-neutral-700 dark:text-neutral-300 italic">
+        "Extravaluable Green Dot!" &mdash; Beeple
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="font-mono text-xs text-neutral-400 dark:text-neutral-600 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+    <p><span class="ape-green">//</span> to be continued...</p>
+    <p class="mt-2"><a href="/" class="hover:text-black dark:hover:text-white">&larr; 2667.io</a></p>
+  </section>
+
+  </div><!-- end page-content -->
+</div>
 </Layout>
 
 <script is:inline>
-  // Theme toggle
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('theme-toggle')?.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
+// Theme toggle
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
+});
 
-  // Lazy-load videos: only start loading when they enter the viewport
-  (function () {
-    var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy-video'));
+// Lazy-load videos: only start loading when they enter the viewport
+(function () {
+  var lazyVideos = [].slice.call(document.querySelectorAll('video.lazy-video'));
 
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var video = entry.target;
-            var sources = video.querySelectorAll('source[data-src]');
-            sources.forEach(function (source) {
-              source.src = source.dataset.src;
-              source.removeAttribute('data-src');
-            });
-            video.load();
-            video.play().catch(function () {});
-            observer.unobserve(video);
-          }
-        });
-      }, { rootMargin: '200px' });
-
-      lazyVideos.forEach(function (video) {
-        observer.observe(video);
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var video = entry.target;
+          var sources = video.querySelectorAll('source[data-src]');
+          sources.forEach(function (source) {
+            source.src = source.dataset.src;
+            source.removeAttribute('data-src');
+          });
+          video.load();
+          video.play().catch(function () {});
+          observer.unobserve(video);
+        }
       });
-    } else {
-      // Fallback: load all videos immediately
-      lazyVideos.forEach(function (video) {
-        var sources = video.querySelectorAll('source[data-src]');
-        sources.forEach(function (source) {
-          source.src = source.dataset.src;
-          source.removeAttribute('data-src');
-        });
-        video.load();
-        video.play().catch(function () {});
+    }, { rootMargin: '200px' });
+
+    lazyVideos.forEach(function (video) {
+      observer.observe(video);
+    });
+  } else {
+    // Fallback: load all videos immediately
+    lazyVideos.forEach(function (video) {
+      var sources = video.querySelectorAll('source[data-src]');
+      sources.forEach(function (source) {
+        source.src = source.dataset.src;
+        source.removeAttribute('data-src');
       });
-    }
-  })();
+      video.load();
+      video.play().catch(function () {});
+    });
+  }
+})();
 </script>
